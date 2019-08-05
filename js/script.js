@@ -9,9 +9,12 @@ $(document).ready(function() {
         return "pizzasize: " + this.sizeChoice + ", crust:" + this.sizeCrust + ", toppings:" + this.sizeTopping;
     };
     //USER INTERFACE
-    $("#submit").click(function() {
+    $("#sb").click(function() {
+        $("#myForm").submit(); // Submit the form
+    
         var size = $('#sizeSelector').val();
         var crust = $('#crustSelector').val();
+        console.log(size);
         var toppings = [];
         $("input[type=checkbox]:checked").each(function() {
             toppings.push($(this).val());
@@ -21,12 +24,12 @@ $(document).ready(function() {
         console.log(newOrder);
         $('ul#placeorderlist').append("<li>" + newOrder.summary() + "</li>");
         var anotherTopping = 0;
-        for (var a = 0; a < toppings.length; a++) {
-            anotherTopping += parseInt(toppings[a]);
+        for (var i = 0; i < toppings.length; i++) {
+            anotherTopping += parseInt(toppings[i]);
         }
-        var total = parseInt(size) + parseInt(crust) + parseInt(anotherTopping);
-        console.log(total);
-        $("#total").text(total);
+        var finalTotal = parseInt(size) + parseInt(crust) + parseInt(anotherTopping);
+       alert(finalTotal);
+        $("#total").append("<p>"+finalTotal+"</p>");
     });
     $('#img').click(function() {
         alert("the delivery cost is 2000");

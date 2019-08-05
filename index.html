@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+    <scriptb src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -44,7 +46,8 @@
             <div id="wrapper">
                     <div id="inputs">
                     <div>
-                  <center><form name="input">
+                  <center>
+                      <form action="" method="post" id="myForm">
                     <h1>Order</h1>
                     First name: <input type="text" name="firstname" placeholder="Your name"><br/>
                     Last name: <input type="text" name="lastname" placeholder="lastname"><br/>
@@ -53,9 +56,9 @@
                    <p>enter the size you want</p>
                    <select id="sizeSelector">
                     <option disabled selected>size</option>
-                    <option id="size1">small</option>
-                    <option id="size2">medium</option>
-                    <option id="size3">large</option>
+                    <option id="size1" value="500">small</option>
+                    <option id="size2" value="500">medium</option>
+                    <option id="size3" value="500">large</option>
                    </select>
                   </p>
                     
@@ -67,21 +70,22 @@
 
                       <select id="crustSelector">
                        <option disabled selected>crust</option>
-                       <option id="crust1">crispy</option>
-                       <option id="crust2">stuffed</option>
-                       <option id="crust3">gluten free</option>
+                       <option id="crust1" value="500">crispy</option>
+                       <option id="crust2" value="500">stuffed</option>
+                       <option id="crust3" value="500">gluten free</option>
                       </select>
                       <br>
                       <br>
                         
                         <p></p>
-                    <input type="submit" value="Submit" id="submit">
-                  </form>
+                    <button type="submit" value="Submit" id="sb">submit</button>
+                 
                   </div>
                   </div>
                   <h1 id="total"> Total:</h1>
+                  <p id="total"></p>
+                </form>
                 </section>
-                <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
-                <scriptb src="js/script.js"></script>
+               
             </body>
 </html>
