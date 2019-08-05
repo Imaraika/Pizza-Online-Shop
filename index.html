@@ -11,17 +11,17 @@
 <body>
     <header>
         <div class="container">
-                <div id="overlay">
-                 <div id="banner">
+            <div id="overlay">
+                <div id="banner">
                     <nav>
                         <ul>
-                          <li>
-                              <a href="#banner">Home</a>
-                          </li>
-                          <li>
-                              <a href="#Order-form">Order Now</a>
-                          </li>
-                          <li>
+                            <li>
+                                <a href="#banner">Home</a>
+                            </li>
+                            <li>
+                                <a href="#Order-form">Order Now</a>
+                            </li>
+                            <li>
                               <a href="#activities">Services</a>
                           </li>
                           <li>
@@ -39,32 +39,49 @@
             <h1 id="cntcnt">Order Online your Pizza</h1>
         </div>
     </main>
-  <section class="btns">
-            <button type="button" class="btn btn-primary">Order now</button>
-            <button type="button" class="btn btn-primary">derivery</button>
-  </section>
-   <section id="order-form">
+ 
+   <section class="order-form">
             <div id="wrapper">
                     <div id="inputs">
                     <div>
-                  <center><form name="input" action="#" method="post">
+                  <center><form name="input">
                     <h1>Order</h1>
                     First name: <input type="text" name="firstname" placeholder="Your name"><br/>
                     Last name: <input type="text" name="lastname" placeholder="lastname"><br/>
                     Address:<input type="email" name="email" placeholder="1234 Street City, ST Zip">
                    <br/>
+                   <p>enter the size you want</p>
+                   <select id="sizeSelector">
+                    <option disabled selected>size</option>
+                    <option id="size1">small</option>
+                    <option id="size2">medium</option>
+                    <option id="size3">large</option>
+                   </select>
+                  </p>
+                    
                       <p>Pizza toppings (Check all that apply)</p>
-                      <input type='checkbox' checked>Cheese
-                      <input type='checkbox'>Mushrooms
-                      <input type='checkbox'>Pepperoni
-                      <p>Comments:</br></p>
-    
+                      <input  value="200" type='checkbox' checked >Cheese
+                      <input type='checkbox' value="500">Mushrooms
+                      <input type='checkbox' value="800">Pepperoni<br>
+                      <p>enter the crust you want</p>
+
+                      <select id="crustSelector">
+                       <option disabled selected>crust</option>
+                       <option id="crust1">crispy</option>
+                       <option id="crust2">stuffed</option>
+                       <option id="crust3">gluten free</option>
+                      </select>
+                      <br>
+                      <br>
+                        
                         <p></p>
-                    <input type="submit" value="Submit" href="#">
+                    <input type="submit" value="Submit" id="submit">
                   </form>
                   </div>
                   </div>
-    </section>
-    
-</body>
+                  <h1 id="total"> Total:</h1>
+                </section>
+                <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+                <scriptb src="js/script.js"></script>
+            </body>
 </html>
