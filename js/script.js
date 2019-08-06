@@ -9,7 +9,7 @@ $(document).ready(function() {
         return "pizzasize: " + this.pzSize + ", crust:" + this.crSize + ", toppings:" + this.tpSize;
     };
     //USER INTERFACE
-    $("#sb").click(function() {
+    $("#sbt").click(function() {
         $("#myForm").submit(function(event){
             event.preventDefault();
             var size = $('#sizeSelector').val();
