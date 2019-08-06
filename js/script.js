@@ -22,7 +22,7 @@ $(document).ready(function() {
             console.log(toppingsArr);
             var newOrder = new placeOrder(size, crust, toppingsArr);
             console.log(newOrder);
-            $('ul#placeorderlist').append("<li>" + newOrder.summary() + "</li>");
+            // $('ul#placeorderlist').append("<li>" + newOrder.summary() + "</li>");
             var anotherTopping = 0;
             for (var i = 0; i < toppingsArr.length; i++) {
                 anotherTopping += parseInt(toppingsArr[i]);
@@ -39,9 +39,4 @@ $(document).ready(function() {
         }) // Submit the form
   
  });
-
-// $(document).ready(function() {
-//     $('#sb').click(function(){
-//         alert("you clicked me!");
-//     })
-// });
+//js function
