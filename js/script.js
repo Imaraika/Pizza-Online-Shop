@@ -29,7 +29,7 @@ $(document).ready(function() {
             }
             var finalTotal = parseInt(size) + parseInt(crust) + parseInt(anotherTopping);
            alert(finalTotal);
-            $("#total").append("<p>"+finalTotal+"</p>");
+            $("#total1").append("<p>"+finalTotal+"</p>");
         });
         $('#img1').click(function() {
             alert("the delivery cost is 2000");

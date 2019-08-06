@@ -46,54 +46,41 @@
                 <section class="order-form">
                     <div id="inputs">
                     <form id="myForm">
-                    <h1>Order</h1>
-                    First name: <input type="text" name="firstname" placeholder="Your name"><br/>
-                    Last name: <input type="text" name="lastname" placeholder="lastname"><br/>
-                    Address:<input type="email" name="email" placeholder="1234 Street City, ST Zip">
-                   <br/>
-                   <p>enter the size you want</p>
-                   <select id="sizeSelector">
-                    <option disabled selected>size</option>
-                    <option id="size1" value="500">small</option>
-                    <option id="size2" value="500">medium</option>
-                    <option id="size3" value="500">large</option>
-                   </select>
-                  </p>
-                    
-                      <p>Pizza toppings (Check all that apply)</p>
-                      <input  value="200" type='checkbox' checked >Cheese
-                      <input type='checkbox' value="500">Mushrooms
-                      <input type='checkbox' value="800">Pepperoni<br>
-                      <p>enter the crust you want</p>
-
-                      <select id="crustSelector">
-                       <option disabled selected>crust</option>
-                       <option id="crust1" value="500">crispy</option>
-                       <option id="crust2" value="500">stuffed</option>
-                       <option id="crust3" value="500">gluten free</option>
-                      </select>
-                      <br>
-                      <br>
-                        
+                        <h1>Order</h1>
+                        First name:     <input type="text" name="firstname" placeholder="Your name"><br><br>
+                        Last name:      <input type="text" name="lastname" placeholder="lastname"><br><br>
+                        Address:        <input type="email" name="email" placeholder="1234 Street City, ST Zip"><br/><br/>
+                        <p>enter the size you want</p>
+                        <select id="sizeSelector">
+                            <option disabled selected>size</option>
+                            <option id="size1" value="500">small</option>
+                            <option id="size2" value="500">medium</option>
+                            <option id="size3" value="500">large</option>
+                        </select>
+                        <p>Pizza toppings (Check all that apply)</p>
+                        <input  value="200" type='checkbox' checked>Cheese
+                        <input type='checkbox' value="500">Mushrooms
+                        <input type='checkbox' value="800">Pepperoni<br>
+                        <p>enter the crust you want</p>
+                        <select id="crustSelector">
+                            <option disabled selected>crust</option>
+                            <option id="crust1" value="500">crispy</option>
+                            <option id="crust2" value="500">stuffed</option>
+                            <option id="crust3" value="500">gluten free</option>
+                        </select><br><br>
                         <p></p>
-                    <button type="submit" value="Submit" id="sb">submit</button>
-                    <img src="images/deimg.jpg" id="img1" height="30" width="40">
-                 
-                  
-                  </div>
-                  
-                </form>
+                        <button type="submit" value="Submit" id="sb">submit</button>
+                        <img src="images/deimg.jpg" id="img1" height="30" width="40">
+                    </div>
+                    </form>
                 </section>
             </div>
             <div class="col-md-6" id="tot">
-                    <h1 id="total"> Summary</h1>
-
-                    <h1 id="total"> Total:</h1>
-                    <p id="total"></p><br><br><br>
-                    <button type="button" onclick="window.location.reload(true)"  id="nwOrder">New Order</button>
+                <h1 id="smr"> Summary</h1>
+                <h1 id="total1"> Total:</h1><br><br><br>
+                <button type="button" onclick="window.location.reload(true)" id="nwOrder">New Order</button>
             </div>
-            </div>
-            </div>
-               
+        </div>
+    </div>             
 </body>
 </html>
