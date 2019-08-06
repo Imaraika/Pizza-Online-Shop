@@ -1,12 +1,12 @@
 $(document).ready(function() {
     //BUSINESS LOGIC
     function placeOrder(size, crust, toppings) {
-        this.sizeChoice = size;
-        this.sizeCrust = crust;
-        this.sizeTopping = toppings;
+        this.pzSize = size;
+        this.crSize = crust;
+        this.tpSize= toppings;
     }
     placeOrder.prototype.summary = function() {
-        return "pizzasize: " + this.sizeChoice + ", crust:" + this.sizeCrust + ", toppings:" + this.sizeTopping;
+        return "pizzasize: " + this.pzSize + ", crust:" + this.crSize + ", toppings:" + this.tpSize;
     };
     //USER INTERFACE
     $("#sb").click(function() {
@@ -15,17 +15,17 @@ $(document).ready(function() {
             var size = $('#sizeSelector').val();
             var crust = $('#crustSelector').val();
             console.log(size);
-            var toppings = [];
+            var toppingsArr = [];
             $("input[type=checkbox]:checked").each(function() {
-                toppings.push($(this).val());
+                toppingsArr.push($(this).val());
             });
-            console.log(toppings);
-            var newOrder = new placeOrder(size, crust, toppings);
+            console.log(toppingsArr);
+            var newOrder = new placeOrder(size, crust, toppingsArr);
             console.log(newOrder);
             $('ul#placeorderlist').append("<li>" + newOrder.summary() + "</li>");
             var anotherTopping = 0;
-            for (var i = 0; i < toppings.length; i++) {
-                anotherTopping += parseInt(toppings[i]);
+            for (var i = 0; i < toppingsArr.length; i++) {
+                anotherTopping += parseInt(toppingsArr[i]);
             }
             var finalTotal = parseInt(size) + parseInt(crust) + parseInt(anotherTopping);
            alert(finalTotal);
