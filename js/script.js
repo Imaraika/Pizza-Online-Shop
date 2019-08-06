@@ -1,18 +1,18 @@
 $(document).ready(function() {
     //BUSINESS LOGIC
     function placeOrder(size, crust, toppings) {
-        this.sizeChoice = size;
-        this.sizeCrust = crust;
-        this.sizeTopping = toppings;
+        this.Psize = size;
+        this.CrSize = crust;
+        this.ToSize = toppings;
     }
     placeOrder.prototype.summary = function() {
-        return "pizzasize: " + this.sizeChoice + ", crust:" + this.sizeCrust + ", toppings:" + this.sizeTopping;
+        return "pizzasize: " + this.Psize + ", crust:" + this.CrSize + ", toppings:" + this.ToSize;
     };
     //USER INTERFACE
     $("#sb").click(function() {
         $("#myForm").submit(); // Submit the form
     
-        var size = $('#sizeSelector').val();
+        var size = $(this).find('#sizeSelector').val();
         var crust = $('#crustSelector').val();
         console.log(size);
         var toppings = [];
