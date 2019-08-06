@@ -36,8 +36,8 @@ $(document).ready(function() {
         });
         $('#img1').click(function() {
             alert("the delivery cost is 2000");
-            var a = prompt("enter ur location");
-            alert("your order will be delivered to" +" "+ a);
+            var loc = prompt("enter ur location");
+            alert("your order will be delivered to" +" "+ loc);
         });
 
         }) 
