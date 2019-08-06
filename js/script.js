@@ -22,13 +22,11 @@ $(document).ready(function() {
             console.log(toppingsArr);
             var newOrder = new placeOrder(size, crust, toppingsArr);
             console.log(newOrder);
-            // $('ul#placeorderlist').append("<li>" + newOrder.summary() + "</li>");
             var anotherTopping = 0;
             for (var i = 0; i < toppingsArr.length; i++) {
                 anotherTopping += parseInt(toppingsArr[i]);
             }
             var finalTotal = parseInt(size) + parseInt(crust) + parseInt(anotherTopping);
-           alert(finalTotal);
             $("#total1").append("<p>"+finalTotal+"</p>");
         });
         $('#img1').click(function() {
@@ -36,7 +34,7 @@ $(document).ready(function() {
             var a = prompt("enter ur location");
             alert("your order will be delivered to" +" "+ a);
         });
-        }) // Submit the form
+        }) 
   
  });
 //js function
