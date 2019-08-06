@@ -22,6 +22,8 @@ $(document).ready(function() {
             console.log(toppingsArr);
             var newOrder = new placeOrder(size, crust, toppingsArr);
             console.log(newOrder);
+            $('#checksum').append("<li>" + newOrder.summary() + "</li>");
+
             var anotherTopping = 0;
             for (var i = 0; i < toppingsArr.length; i++) {
                 anotherTopping += parseInt(toppingsArr[i]);
