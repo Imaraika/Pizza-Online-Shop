@@ -34,7 +34,7 @@ $(document).ready(function() {
         $('#img1').click(function() {
             alert("the delivery cost is 2000");
             var a = prompt("enter ur location");
-            alert("your order will be delivered to" + a);
+            alert("your order will be delivered to" +" "+ a);
         });
         }) // Submit the form
   
