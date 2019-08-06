@@ -35,6 +35,9 @@ $(document).ready(function() {
             alert("your order will be delivered to" +" "+ a);
         });
         }) 
+        $('#checksum').append("<p>"+newOrder.size+ "</p>");
+        $('#checksum').append("<p>"+newOrder.crust+ "</p>");
+        $('#checksum').append("<p>"+newOrder.toppingsArr+ "</p>");
   
  });
 //js function
