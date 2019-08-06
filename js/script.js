@@ -28,16 +28,18 @@ $(document).ready(function() {
             }
             var finalTotal = parseInt(size) + parseInt(crust) + parseInt(anotherTopping);
             $("#total1").append("<p>"+finalTotal+"</p>");
+            $('#checksum').append("<p>"+newOrder.size+ "</p>");
+            $('#checksum').append("<p>"+newOrder.crust+ "</p>");
+            $('#checksum').append("<p>"+newOrder.toppingsArr+ "</p>");
         });
         $('#img1').click(function() {
             alert("the delivery cost is 2000");
             var a = prompt("enter ur location");
             alert("your order will be delivered to" +" "+ a);
         });
+
         }) 
-        $('#checksum').append("<p>"+newOrder.size+ "</p>");
-        $('#checksum').append("<p>"+newOrder.crust+ "</p>");
-        $('#checksum').append("<p>"+newOrder.toppingsArr+ "</p>");
+       
   
  });
 //js function
