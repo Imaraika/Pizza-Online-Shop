@@ -1,7 +1,14 @@
+<<<<<<< HEAD
     @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Patrick+Hand+SC|Waiting+for+the+Sunrise);
 body{
   font-size:25px;
   background-color: red;
+=======
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Patrick+Hand+SC|Waiting+for+the+Sunrise);
+body{
+  font-size:25px;
+  background-color: antiquewhite;
+>>>>>>> 1b57afb3366918682fbe356d7f46e5e284cd7ee1
 }
 header {
 	background-color: black;
